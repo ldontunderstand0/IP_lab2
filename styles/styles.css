@@ -1,0 +1,136 @@
+.panel a {
+    float: left;
+    color: #050505;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Libre Bodoni', sans-serif;
+    min-width: 90px;
+}
+.panel {
+    border-bottom: 2px solid black;
+    height: 70px;
+}
+.reg {
+    float: right;
+}
+body {
+    margin: 0;
+    background-color: #ffffff;
+    background: url("https://bureau.ru/var/files/img1532613761");
+}
+.img {
+    margin-top: 20%;
+    width: 100%;
+}
+a:hover {
+    color: rgb(255, 0, 0);
+}
+.info {
+    width: 50%;
+    padding: 5%;
+}
+.info1 {
+    width: 70%;
+    font-size: 200%;
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+    margin-right: 1%;
+}
+.info2 {
+    width: 90%;
+    font-size: 150%;
+    margin: 0;
+}
+.content {
+    max-width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 600px;
+    margin-top: 4%;
+    display: inline-flex;
+}
+@media (max-width: 1200px) {
+    .content {
+        max-width: 1050px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .content {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 910px) {
+    .content {
+        max-width: none;
+    }
+}
+
+
+
+
+.cont {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3%;
+}
+.img3 {
+    width: 500px;
+    height:350px;
+    margin-right: 9%;
+}
+.img4 {
+    width: 500px;
+    margin-left: 9%;
+    height: 350px;
+}
+.imges {
+    margin: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img5 {
+    width: 1470px;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+    height: 590px;
+}
+.text1 {
+    padding-left: 15%;
+    margin-right: 15%;
+    padding-top: 8%;
+    font-size: 30px;
+    position: absolute;
+}
+.img6 {
+    padding-left: 30%;
+    margin-right: 15%;
+    padding-top: 3%;
+    width: 40%;
+    height: 10%;
+}
+.gallery {
+    padding-top: 6%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#mainImage {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.elementImage {
+    width: 800px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
