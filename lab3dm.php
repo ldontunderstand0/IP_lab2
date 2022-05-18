@@ -25,15 +25,15 @@
     <table>
         <tr>
             <td>Первое множество</td>
-            <td> <input type="text" id="arr1" value="" size="50"/></td>
+            <td> <input type="text" id="arr1" value="" size="50" placeholder="Пример: a b c"/></td>
         </tr>
         <tr>
             <td>Второе множество</td>
-            <td> <input type="text" id="arr2" value="" size="50"/></td>
+            <td> <input type="text" id="arr2" value="" size="50" placeholder="Пример: 1 2 3"/></td>
         </tr>
         <tr>
             <td>Пары элементов</td>
-            <td> <input type="text" id="couples" value="" size="50"/></td>
+            <td> <input type="text" id="couples" value="" size="50" placeholder="Пример: a3 b1 c2"/></td>
         </tr>
         <tr>
             <td colspan="2"> <input type="button" value="Расчитать"  onclick="main();"/></td>

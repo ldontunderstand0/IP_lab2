@@ -25,7 +25,10 @@
     <table>
         <tr>
             <td>Введите бинарную матрицу n*n</td>
-            <td> <textarea id="arr" value="" rows = "10" cols = "20" size=""></textarea></td>
+            <td> <textarea id="arr" value="" rows = "10" cols = "20" size="" placeholder="Пример:
+1 0 1
+0 0 0
+1 0 0"></textarea></td>
         </tr>
         <tr>
             <td colspan="2"> <input type="button" value="Расчитать"  onclick="main();"/></td>
