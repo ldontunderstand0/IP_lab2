@@ -114,6 +114,7 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
+
 }
 .img5 {
     width: 96%;
@@ -137,7 +138,7 @@ body {
     height: 10%;
 }
 .gallery {
-    padding-top: 6%;
+    padding-top: 4%;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -145,12 +146,12 @@ body {
 .buttonGallery1{
     position:fixed;
     left: 15vw;
-    top: 25vw;
+    top: 24vw;
     }
 .buttonGallery2{
     position:fixed;
     left: 79vw;
-    top: 25vw;
+    top: 24vw;
     }
 #mainImage {
     width: 800px;
