@@ -22,10 +22,12 @@
         </div>
 </div>
 </tr>
-<a href="lab1dm.php">Лабораторная работа №1</a><br>
-<a href="lab2dm.php">Лабораторная работа №2</a><br>
-<a href="lab3dm.php">Лабораторная работа №3</a><br>
-<a href="lab4dm.php">Лабораторная работа №4</a><br>
-<a href="lab5dm.php">Лабораторная работа №5</a><br>
+<div class="labs">
+    <a href="lab1dm.php">Лабораторная работа №1</a><br>
+    <a href="lab2dm.php">Лабораторная работа №2</a><br>
+    <a href="lab3dm.php">Лабораторная работа №3</a><br>
+    <a href="lab4dm.php">Лабораторная работа №4</a><br>
+    <a href="lab5dm.php">Лабораторная работа №5</a><br>
+</div>
 </body>
 </html>

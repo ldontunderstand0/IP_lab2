@@ -120,6 +120,16 @@ a:hover {
     display: flex;
     align-items: center;
 }
+.buttonGallery1{
+    position:fixed;
+    left: 15vw;
+    top: 25vw;
+    }
+.buttonGallery2{
+    position:fixed;
+    left: 79vw;
+    top: 25vw;
+    }
 #mainImage {
     width: 800px;
     height: 450px;
@@ -133,4 +143,9 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+.labs {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3%;
 }

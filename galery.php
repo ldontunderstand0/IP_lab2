@@ -22,11 +22,11 @@
         </div>
 </div>
 <div class = "gallery" >
-        <div class = "buttonGallery" onclick="LeftClickImage()"> <img src="/images/left.jpg"> </div>
+        <div class = "buttonGallery1" onclick="LeftClickImage()"> <img src="/images/left.png"> </div>
         <div>
             <img id="mainImage">
         </div>
-        <div class = "buttonGallery" onclick="RightClickImage()"> <img src="/images/right.jpg"> </div>
+        <div class = "buttonGallery2" onclick="RightClickImage()"> <img src="/images/right.png"> </div>
 </div>
 </tr>
 </body>
