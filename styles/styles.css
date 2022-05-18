@@ -1,31 +1,54 @@
-.panel a {
-    float: left;
-    color: #050505;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Libre Bodoni', sans-serif;
-    min-width: 90px;
-}
-.panel {
-    border-bottom: 2px solid black;
-    height: 70px;
-}
-.reg {
+.avtorisator {
     float: right;
 }
 body {
     margin: 0;
     background-color: #ffffff;
-    background: url("https://bureau.ru/var/files/img1532613761");
+    background: url("https://oir.mobi/uploads/posts/2021-03/1616616055_54-p-raduzhnii-fon-razmitii-58.jpg");
+}
+.closing-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 2px white;
+    padding: 20px 0;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+.closing-button span {
+    font-family: 'Libre Bodoni', sans-serif;
+    position: relative;
+    z-index: 5;
+}
+.closing-button:before, .closing-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.closing-button:before {
+    transform: translateX(-100%);
+    background: white;
+    transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+.closing-button:after {
+    background: #f4bd31;
+    transform: translateX(100%);
+    transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+}
+.closing-button:hover:before, .closing-button:hover:after {
+    transform: translateX(0);
 }
 .img {
     margin-top: 20%;
     width: 100%;
-}
-a:hover {
-    color: rgb(255, 0, 0);
 }
 .info {
     width: 50%;
@@ -35,12 +58,14 @@ a:hover {
     width: 70%;
     font-size: 200%;
     border-bottom: 1px solid black;
+    font-family: 'Libre Bodoni', sans-serif;
     margin-bottom: 5%;
     margin-right: 1%;
 }
 .info2 {
     width: 90%;
     font-size: 150%;
+    font-family: 'Libre Bodoni', sans-serif;
     margin: 0;
 }
 .content {
@@ -56,25 +81,22 @@ a:hover {
         max-width: 1050px;
     }
 }
-
 @media (max-width: 1060px) {
     .content {
         max-width: 900px;
     }
 }
-
 @media (max-width: 910px) {
     .content {
         max-width: none;
     }
 }
-
-
-
-
 .cont {
     font-size: 20px;
+    text-decoration: none;
+    font-family: 'Libre Bodoni', sans-serif;
     text-align: center;
+    color: #524f4e;
     padding-top: 3%;
 }
 .img3 {
@@ -94,18 +116,18 @@ a:hover {
     align-items: center;
 }
 .img5 {
-    width: 1470px;
+    width: 96%;
     margin-left: 2%;
-    margin-top: 2%;
     margin-right: 2%;
-    height: 590px;
 }
 .text1 {
     padding-left: 15%;
     margin-right: 15%;
-    padding-top: 8%;
+    font-family: 'Libre Bodoni', sans-serif;
+    padding-top: 6%;
     font-size: 30px;
     position: absolute;
+    color: white;
 }
 .img6 {
     padding-left: 30%;
@@ -148,4 +170,12 @@ a:hover {
     text-align: center;
     font-size: 20px;
     padding-top: 3%;
+    font-family: 'Libre Bodoni', sans-serif;
+}
+.userinfo {
+    font-family: 'Libre Bodoni', sans-serif;
+    text-align: center;
+}
+.userImage {
+    text-align: center;
 }

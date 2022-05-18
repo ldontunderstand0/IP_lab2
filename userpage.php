@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <title>Лабораторная работа №2</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script type="text/javascript" src="/scripts/lab2dm.js"></script>
+<html lang="ru">
+<head> 
+<link href="https://fonts.google.com/specimen/Oleo+Script" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name = "viewport" content ="witdh=device-width">
+<title>Мой сайт</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="scripts/scripts1.js"></script>
 </head>
+<div class="op">
 <body bgcolor="white">
 <tr>
 <div>
@@ -32,23 +36,27 @@
 
         </div>
 </div>
+
+<div class="userImage">
+    <?php
+    ?>
+    <img src="<?php echo $_COOKIE['image']?>" alt="">
+
+</div>
+<div class="userinfo">
+    Имя: <?=$_COOKIE['user']?><br>
+    Логин: <?=$_COOKIE['login']?><br>
+    Админ:
+    <?php if ($_COOKIE['admin']==0):?>
+        Нет
+    <?php else:?>
+        Да
+        <br>
+        <a href="admin.php"> Админ панель </a>
+    <?php endif;?>
+
+</div>
 </tr>
-<h1>Лабораторная работа №2</h1>
-<form>
-    <table>
-        <tr>
-            <td>Введите бинарную матрицу n*n</td>
-            <td> <textarea id="arr" value="" rows = "10" cols = "20" size="" placeholder="Пример:
-1 0 1
-0 0 0
-1 0 0"></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2"> <input type="button" value="Расчитать"  onclick="main();"/></td>
-        </tr>
-    </table>
-</form>
-<div id ="matrix"></div>
-<div id ="result"></div>
-</body>
+</div>
+</body> 
 </html>

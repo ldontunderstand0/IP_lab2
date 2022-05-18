@@ -10,15 +10,28 @@
 </head>
 <body bgcolor="white">
 <tr>
-<div class="panel">
-        <a href="index.php"><font size=5>Главная</font></a></td>
-        <a href="info.php"><font size=5>О себе</font></a></td>
-        <a href="labs.php"><font size=5>Лабы по ДМ</font></a></td>
-        <a href="galery.php"><font size=5>Галерея</font></a></td>
-        <a href="contacts.php"><font size=5>Ссылки</font></a></td>
-        <div class="reg">
-            <a href="enter.php"><font size=5>Вход</font></a></td>
-            <a href="registration.php"><font size=5>Регистрация</font></a></td>
+<div>
+    <a href="index.php" class="closing-button"><span>Главная</span></a></td>
+    <a href="info.php" class="closing-button"><span>О себе</span></a></td>
+    <a href="labs.php" class="closing-button"><span>Лабы по ДМ</span></a></td>
+    <a href="galery.php" class="closing-button"><span>Галерея</span></a></td>
+    <a href="contacts.php" class="closing-button"><span>Ссылки</span></a></td>
+    <div class="avtorisator">
+            <?php
+                if($_COOKIE['user']==''):
+            ?>
+
+
+            <a href="registr.php" class="closing-button"><span>Регистрация/вход</span></a></td>
+
+            </a>
+            <?php else:?>
+                <div>
+                    <a href="exit.php" class="closing-button"><span>Выход</span></a>
+                    <a href="userpage.php" class="closing-button"><span><?=$_COOKIE['user']?></span></a>
+                </div>
+            <?php endif;?>
+
         </div>
 </div>
 <div class="content">
