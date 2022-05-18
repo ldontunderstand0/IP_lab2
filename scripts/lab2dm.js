@@ -122,30 +122,30 @@ function main()
         }
         let result = "";
         if (reflecsive == true) {
-            result = "данная матрица рефлексивна\n";
+            result = "рефлексивно\n";
         }
         else {
-            result = "данная матрица не рефлексивна\n";
+            result = "не рефлексивно\n";
         }
         if (symmetric == true) {
-            result += "данная матрица симметрична\n";
+            result += "симметрично\n";
         }
         else {
-            result += "данная матрица не симметрична\n";
+            result += "не симметрично\n";
         }
         if (antisymmetric == true) {
-            result += "данная матрица антисимметрична\n";
+            result += "антисимметрично\n";
         }
         else {
-            result += "данная матрица не антисимметрична\n";
+            result += "не антисимметрично\n";
         }
         if (tranzitive == true) {
-            result += "данная матрица транзитивна\n";
+            result += "транзитивно\n";
         }
         else {
-            result += "данная матрица не транзитивна\n";
+            result += "не транзитивно\n";
         }
-        document.getElementById('result').innerText = "Свойства матрицы:\n" + result;
+        document.getElementById('result').innerText = "Свойства отношения:\n" + result;
 
     }
 }
