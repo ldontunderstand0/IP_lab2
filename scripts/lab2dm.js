@@ -43,7 +43,7 @@ function validate(str) // Проверяет правильность ввода
         }
     }
     else {
-        error = "Матрица не должна быть пустой.";
+        error = "Поле ввода не должно быть пустым.";
         flag = false;
     }
     return flag;
