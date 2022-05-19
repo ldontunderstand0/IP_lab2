@@ -3,6 +3,8 @@
 <head>
 <link href="https://fonts.google.com/specimen/Libre+Bodoni" rel="stylesheet">
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Главная</title>
 <link rel="stylesheet" href="styles/styles.css">
 <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
@@ -10,7 +12,7 @@
 </head>
 <body bgcolor="white">
 <tr>
-<div>
+<div class="mobile">
     <a href="index.php" class="closing-button"><span>Главная</span></a></td>
     <a href="info.php" class="closing-button"><span>О себе</span></a></td>
     <a href="labs.php" class="closing-button"><span>Лабы по ДМ</span></a></td>
@@ -20,10 +22,8 @@
             <?php
                 if($_COOKIE['user']==''):
             ?>
-
-
-            <a href="registr.php" class="closing-button"><span>Регистрация/вход</span></a></td>
-
+            <a href="enter.php" class="closing-button"><span>Вход</span></a></td>
+            <a href="registr.php" class="closing-button"><span>Регистрация</span></a></td>
             </a>
             <?php else:?>
                 <div>
@@ -31,11 +31,9 @@
                     <a href="userpage.php" class="closing-button"><span><?=$_COOKIE['user']?></span></a>
                 </div>
             <?php endif;?>
-
         </div>
-</div>
-<div class="content">
-        <div><img class="img" src="/images/2.jpg"></div>
+
+        <img class="img" src="/images/2.jpg">
             <div class="info">
                 <p class="info1">О чём мой сайт:</p>
                 <p class="info2" align="justify"> На этом сайте есть немного информации обо мне и моих интересах.

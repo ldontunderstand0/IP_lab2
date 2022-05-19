@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head> 
 <link href="https://fonts.google.com/specimen/Oleo+Script" rel="stylesheet">
 <meta charset="UTF-8">
-<meta name = "viewport" content ="witdh=device-width">
-<title>Мой сайт</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>АдминПанель</title>
 <link rel="stylesheet" href="styles/styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script type="text/javascript" src="script/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="script/script.js"></script>
 </head>
-<div class="op">
 <body bgcolor="white">
 <tr>
-<div>
+<div class="mobile">
     <a href="index.php" class="closing-button"><span>Главная</span></a></td>
     <a href="info.php" class="closing-button"><span>О себе</span></a></td>
     <a href="labs.php" class="closing-button"><span>Лабы по ДМ</span></a></td>
@@ -23,10 +22,8 @@
             <?php
                 if($_COOKIE['user']==''):
             ?>
-
-
-            <a href="registr.php" class="closing-button"><span>Регистрация/вход</span></a></td>
-
+            <a href="enter.php" class="closing-button"><span>Вход</span></a></td>
+            <a href="registr.php" class="closing-button"><span>Регистрация</span></a></td>
             </a>
             <?php else:?>
                 <div>
@@ -34,7 +31,6 @@
                     <a href="userpage.php" class="closing-button"><span><?=$_COOKIE['user']?></span></a>
                 </div>
             <?php endif;?>
-
         </div>
 </div>
 <div class="cont">
@@ -66,10 +62,9 @@
      };
      ?>
 
-     <table>
+     <table class="tabl">
      <div class="tabletext">
      Пользователи
-    </div>
     <tr>
     <td>Логин</td>
     <td>Имя</td>
@@ -86,7 +81,7 @@
         Данный пользователь не является админом
     <?php endif;?>
     </div>
+    </div>
 </div>
-<div class="footer">Коппирайт с этого сайта ЗАПРЕЩЕН! Если хотите использовать информацию, то платите деньги.</div>
 </body>
 </html>

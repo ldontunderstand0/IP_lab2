@@ -5,10 +5,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Главная</title>
-<link rel="stylesheet" href="styles/styles.css">
-<script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
-<script type="text/javascript" src="scripts/scripts.js"></script>
+    <title>Форма авторизации</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body bgcolor="white">
 <tr>
@@ -32,15 +30,28 @@
                 </div>
             <?php endif;?>
         </div>
-<div class="imges">
-    <img class="img3" src="/images/3.jpg">
-    <div class="cont">
-    <a href= "https://vk.com/airjaba"<p>Вконтакте</p></a>
-    <a href= "https://github.com/ldontunderstand0"<p>Github</p></a>
-    <a href= "https://steamcommunity.com/id/airjaba/"<p>Steam</p></a>
+
+    <div class="container mt-4">
+        <?php
+            if($_COOKIE['user'] == ''):
+        ?>
+        <div class="row">
+            <div class="col">
+            <h1>Форма авторизации<br></br></h1>
+            <form action="auth.php" method="post">
+            <input type="text" class="form-control" name="login"
+            id="login" placeholder="Введите логин"><br>
+            
+            <input type="password" class="form-control" name="pass"
+            id="pass" placeholder="Введите пароль"> <?php if($_COOKIE['error4'] != ""){ print($_COOKIE['error4']);setcookie("error4", "Такой пользователь не найден", time() - 3600 * 24 * 30, "/");} ?> <br>
+            <button class="closing-button" type="submit"><span>Войти</span></button>
+            </form>
+        </div>
+    <?php else:?>
+        <p> Привет <?=$_COOKIE['user']?>. Чтобы выйти нажмите здесь <a href="/exit.php"> здесь </a> </p>
+    
+    <?php endif;?>
     </div>
-    <img class="img4" src="/images/4.jpg">
-</div>
 </div>
 </tr>
 </body>

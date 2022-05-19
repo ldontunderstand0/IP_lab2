@@ -8,7 +8,7 @@ function generateImage()
 {
     let widthDiv = 10/countDiv;
     let image = pathImages + "g" + numberImage + ".jpg";
-    for (let i = 0; i < countDiv * 5.05; i++)
+    for (let i = 0; i < 200; i++)
     {
         let item = $("<div></div>");
         item.addClass("elementImage");
@@ -24,9 +24,9 @@ function changeImage() {
     let i = 30;
     let j = 30;
     $("#mainImage").each(function () {
-        $(this).hide(speed * i, function () {
+        $(this).hide(speed * j, function () {
             $(this).css("background-image", 'url('+image+')');
-            $(this).show(speed * j);
+            $(this).show(speed * i);
         });
         i++;
     });
